@@ -9,7 +9,7 @@ pipeline{
         stage("maven build"){
             steps{
                 sh " mvn clean package "
-                sh " mv target/*.war target/myweb.war"
+                sh " mv webapp/target/*.war webapp/target/myweb.war"
             }
         }
         stage("tomcat_deploy"){
