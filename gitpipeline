@@ -5,12 +5,6 @@ pipeline{
             steps{
                 git 'https://github.com/krishnamajja/hello-world.git'
             }
-        } 
-    
-    stage("maven build"){
-            steps{
-                sh "mvn clean package"
-            }
         }
     }
 }
