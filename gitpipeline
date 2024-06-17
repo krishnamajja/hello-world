@@ -9,7 +9,7 @@ pipeline{
     
     stage("maven build"){
             steps{
-                sh -xvf "mvn clean package"
+                sh "mvn clean package"
             }
         }
     }
