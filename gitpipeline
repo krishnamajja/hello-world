@@ -18,9 +18,9 @@ pipeline{
                 sshagent(['Tomcat1']) {
                 sh """
 
-                scp -o StrictHostKeyChecking=no webapp/target/myweb.war tomcat@16.171.200.68:/opt/tomcat8/webapps/
-                ssh tomcat@16.171.200.68 /opt/tomcat8/bin/shutdown.sh
-                ssh tomcat@16.171.200.68 /opt/tomcat8/bin/startup.sh
+                scp -o StrictHostKeyChecking=no webapp/target/myweb.war tomcat@16.171.198.243:/opt/tomcat8/webapps/
+                ssh tomcat@16.171.198.243 /opt/tomcat8/bin/shutdown.sh
+                ssh tomcat@16.171.198.243 /opt/tomcat8/bin/startup.sh
                 """
                 
          }
